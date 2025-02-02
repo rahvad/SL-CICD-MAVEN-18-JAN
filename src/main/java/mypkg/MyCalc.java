@@ -25,6 +25,10 @@ public class MyCalc {
 		   return false;
 		}
 	}
+	public void display()
+	{
+		System.out.println("This is master Branch");
+	}
 
 	public static void main(String[] args) {
 		MyCalc calc = new MyCalc();
