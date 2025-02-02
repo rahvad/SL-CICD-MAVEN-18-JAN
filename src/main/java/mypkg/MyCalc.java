@@ -37,6 +37,7 @@ public class MyCalc {
 		System.out.println("Mul is: "+calc.mul(20, 10));
 		System.out.println("Div is: "+calc.div(20, 10));
 		System.out.println("Even: "+calc.evenNum(10));
+		calc.display();
 	}
 
 }
