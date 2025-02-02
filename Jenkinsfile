@@ -18,6 +18,13 @@ pipeline
 		{	
 			steps
 			{
+				bat 'mvn clean'
+			}
+		}
+		stage('Clean Stage')
+		{	
+			steps
+			{
 				bat 'mvn install'
 			}
 		}
