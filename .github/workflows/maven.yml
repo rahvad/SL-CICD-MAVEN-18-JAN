@@ -23,7 +23,7 @@ jobs:
 
       
     - name: Build and Push 
-      uses: mr-smithers-excellent/docker-build-push@v6
+      uses: docker/build-push-action@v5
       with:
         image: rahvad/slcicd
         registry: docker.io
