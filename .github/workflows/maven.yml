@@ -1,4 +1,4 @@
-name: Java CI with Maven by Hitesh
+name: Java CI with Maven by Rahul
 on:
   push:
     branches: [ "master" ]
@@ -22,14 +22,8 @@ jobs:
       run: mvn -B package --file pom.xml
 
       
-    - name: Set up QEMU
-      uses: docker/setup-qemu-action@v2
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
-
-    - name: Build and Push
-      uses: docker/build-push-action@v5
+    - name: Build and Push 
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: rahvad/slcicd
         registry: docker.io
